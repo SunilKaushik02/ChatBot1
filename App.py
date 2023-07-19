@@ -12,9 +12,6 @@ from langchain.llms import OpenAI
 st.title('check GPT')
 pr=st.text_input('Enter text here')
 
-# chat = ChatOpenAI(temperature=0.1,openai_api_key="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")
-chat = OpenAI(temperature=0.9,openai_api_key="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")
-
 if pr:
     resp=chat(pr)
     st.write(resp)

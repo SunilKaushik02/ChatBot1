@@ -17,7 +17,7 @@ chat = OpenAI(temperature=0.9,openai_api_key="sk-806XRR2gfm7mimacVAkkT3BlbkFJKla
 
 if pr:
     resp=chat(pr)
-    st.response(resp)
+    st.write(resp)
 
 # template = "You are a helpful assistant that translates {input_language} to {output_language}."
 # system_message_prompt = SystemMessagePromptTemplate.from_template(template)
